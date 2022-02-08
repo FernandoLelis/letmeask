@@ -14,7 +14,7 @@ export function Home() {
                <p>Tire as duvidas da sua audiência em tempo-real</p>
             </aside>
             <main>
-               <div>
+               <div className="main-content">
                 <img src={logoImg} alt="Letmeask" />   
                 </div> 
                 <button>
