@@ -91,11 +91,15 @@
         cursor: pointer;
         border: 0;
 
+        transition: filter 0.2s;
+
         img {
             margin-right: 8px;
         }
 
-
+        &:hover {
+            filter: brightness(0.9);
+        }
     }
 
     .separator {
@@ -110,6 +114,7 @@
             content: '';
             flex: 1;
             height: 1px;
+            width: 150px;
             background: #a8a8b3;
             margin-right: 16px;
         }
