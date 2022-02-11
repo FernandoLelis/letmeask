@@ -57,7 +57,7 @@
 
         form {            
             input {
-                height: 500px;
+                height: 50px;
                 border-radius: 8px;
                 padding: 0 16px;
                 background: #fff;
@@ -70,6 +70,16 @@
 
             button, input {
                 width: 100%;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #737380;
+            margin-top: 16px;
+
+            a {
+                color: #e559f9;
             }
         }
     }
@@ -100,6 +110,7 @@
         &:hover {
             filter: brightness(0.9);
         }
+
     }
 
     .separator {
@@ -114,7 +125,6 @@
             content: '';
             flex: 1;
             height: 1px;
-            width: 150px;
             background: #a8a8b3;
             margin-right: 16px;
         }

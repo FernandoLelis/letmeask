@@ -6,7 +6,7 @@ import googleIconImg from '../assets/images/google-icon.svg';
 import '../styles/auth.scss';
 import { Button } from '../components/Button';
 
-export function Home() {
+export function NewRoom() {
     return(
         <div id='page-auth'>
             <aside>
@@ -15,23 +15,22 @@ export function Home() {
                <p>Tire as duvidas da sua audiência em tempo-real</p>
             </aside>
             <main>
-               <div className="main-content">
+                <div className="main-content">
                     <img src={logoImg} alt="Letmeask" />   
-                    <button className="create-room">
-                        <img src={googleIconImg} alt="Logo do Google" />
-                        Crie sua sala com o google
-                    </button>
-                    <div className="separator">ou entre em uma sala</div>
+                    <h2>Criar uma nova sala</h2>
                     <form>
                         <input 
                             type="text"
                             placeholder="Digite o código da sala"
                         />
                         <Button type="submit">
-                            Entrar na sala
+                            Criar sala
                         </Button>
                     </form>
-                </div> 
+                    <p>
+                        Quer entrar em uma sala existente? <a href="#">Clique aqui</a>
+                    </p>
+                </div>
             </main>
         </div>
     );
