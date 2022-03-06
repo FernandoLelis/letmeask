@@ -1,20 +1,22 @@
-import { createContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Home } from './pages/Home';
 import { NewRoom } from './pages/NewRoom';
 
-export const TestContext = createContext('');
+import { AuthContextProvider} from './contexts/AuthContext'
+
+
 
 function App() {
+
   return (
     <BrowserRouter>
-      <TestContext.Provider value='Teste'>
+      <AuthContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms/new" element={<NewRoom />} />
         </Routes>
-      </TestContext.Provider>
+      </AuthContextProvider>
     </BrowserRouter>    
   );
 }
